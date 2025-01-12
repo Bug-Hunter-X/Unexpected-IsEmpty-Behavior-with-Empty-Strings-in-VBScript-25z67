@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in VBScript related to the `IsEmpty` function and its interaction with Variants.  The `IsEmpty` function in VBScript can be misleading when you have a Variant that contains an empty string.  While it returns `True` for a truly empty variant (Uninitialized), it also returns `True` for a variant that contains an empty string (""). This can lead to difficult-to-detect issues where empty strings are implicitly treated as missing values, masking potential errors.
+
+The provided code showcases this behavior and offers a solution to help mitigate it.
